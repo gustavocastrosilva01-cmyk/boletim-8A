@@ -1,0 +1,175 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CORPO DA PÁGINA ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa; /* fundo claro, estilo clean */
+  color: #1f2937;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  background-color: #2563eb; /* azul principal */
+  color: #ffffff;            /* texto branco */
+  padding: 24px 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards {
+  display: grid;
+  /* no celular fica 1 coluna, no computador várias */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* sombra suave */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2563eb; /* azul principal */
+}
+
+.legenda-frequencia {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #16a34a; /* verde suave para indicar positivo */
+  font-weight: bold;
+}
+
+/* ===== ÁREA DA TABELA ===== */
+.tabela-area {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.titulo-tabela {
+  font-size: 1.2rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Permite rolar a tabela no celular sem quebrar o layout */
+.tabela-responsiva {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px; /* força rolagem horizontal em telas pequenas */
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #2563eb; /* azul principal */
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* Linhas alternadas para facilitar a leitura */
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+/* ===== SITUAÇÕES ===== */
+.situacao-bom {
+  color: #16a34a; /* verde */
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #dc2626; /* vermelho */
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #6b7280; /* cinza */
+  font-style: italic;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 32px;
+  padding: 16px;
+}
+
+/* ===== AJUSTES PARA CELULAR ===== */
+@media (max-width: 480px) {
+  .cabecalho h1 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
