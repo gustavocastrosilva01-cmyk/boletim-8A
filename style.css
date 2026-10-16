@@ -173,3 +173,140 @@ tbody tr:hover {
     font-size: 0.85rem;
   }
 }
+
+/* ===== TELA DE PIN ===== */
+.tela-pin {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.card-pin {
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-pin h2 {
+  font-size: 1rem;
+  color: #2563eb;
+  margin-bottom: 8px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.info-aluno {
+  font-size: 0.85rem !important;
+  color: #6b7280 !important;
+  font-weight: normal !important;
+  margin-bottom: 16px;
+}
+
+.card-pin label {
+  display: block;
+  font-size: 0.9rem;
+  color: #1f2937;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.card-pin input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.card-pin input:focus {
+  border-color: #2563eb;
+}
+
+.card-pin button {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-pin button:hover {
+  background-color: #1d4ed8;
+}
+
+.card-pin button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.mensagem-pin {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #dc2626;
+  min-height: 18px;
+}
+
+/* ===== BARRA DE AÇÕES ===== */
+.barra-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.barra-acoes button {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.barra-acoes button:hover {
+  background-color: #1d4ed8;
+}
+
+.barra-acoes button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.mensagem-status {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.escondido {
+  display: none !important;
+}
+
+/* ===== CAMPOS DE EDIÇÃO NA TABELA ===== */
+.campo-edicao {
+  width: 70px;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.campo-edicao:focus {
+  border-color: #2563eb;
+}
+
+.campo-edicao.invalido {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
