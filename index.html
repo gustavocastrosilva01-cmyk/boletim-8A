@@ -67,6 +67,33 @@
         </div>
       </section>
 
+      <!-- Área dos gráficos -->
+      <section class="area-graficos">
+
+        <article class="grafico-card">
+          <h2>Média por disciplina</h2>
+          <div class="grafico-container grafico-alto">
+            <canvas id="graficoMediasDisciplinas"></canvas>
+          </div>
+        </article>
+
+        <article class="grafico-card">
+          <h2>Evolução da média geral</h2>
+          <div class="grafico-container">
+            <canvas id="graficoEvolucaoTrimestres"></canvas>
+          </div>
+        </article>
+
+        <article class="grafico-card">
+          <h2>Faltas por trimestre</h2>
+          <div id="estadoFaltas"></div>
+          <div class="grafico-container">
+            <canvas id="graficoFaltasTrimestres"></canvas>
+          </div>
+        </article>
+
+      </section>
+
       <!-- Tabela de notas (as linhas serão criadas pelo JavaScript) -->
       <section class="tabela-area">
         <h2 class="titulo-tabela">Notas por Disciplina</h2>
@@ -98,6 +125,7 @@
     <p>Boletim Digital — dados fictícios para estudo.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
